@@ -1,0 +1,85 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+@mixin icon($iconWidth) {
+    font-size: $iconWidth;
+    color: $warningCOlor;
+}
+body{
+    font-family: sans-serif;;
+}
+h1{
+    color: $pirmaryColor;
+    font-weight: 800;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.custom-btn {
+    border-radius: none !important;
+    background-color: $warningCOlor;
+    border: 4px soli $secondaryColor;
+    font-weight: 500; 
+}
+.custom-waring-color {
+    color: $secondaryColor;
+}
+// .custom-btn:hover {
+//     background-color: $pirmaryColor;
+// }
+button {
+    border: 2px solid $secondaryColor;
+    background:none;
+    padding: 10px 20px;
+    color: $secondaryColor;
+    border-bottom-right-radius: 30%;
+}
+button:hover {
+    background-color: $secondaryColor;
+    color: $pirmaryColor;
+}
+.custom-section {
+    background-color: $pirmaryColor;
+    margin: 50px 0;
+    padding: 50px 0;
+
+}
+.home-background-overlay{
+    background-image: url('./assets/HomeBanner/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.certificate {
+    background-color: $pirmaryColor;
+    .certificate-icon {
+        font-size: 40px;
+        color: $warningCOlor;
+    }
+}
+// it will be added all components
+.top-bottom-margin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.caring-icon {
+    @include icon($iconWidth: 50px)
+}
+.caring-love {
+    top: 75%;
+    left: 10%;
+}
+.caring-home-section {
+    img {
+        width: 100%;
+        height: 90%;
+    }
+}
+.footer-icon {
+    @include icon($iconWidth: 20px)
+}
+.custom-br {
+    display:block;
+    width: 40%;
+    height: 2px;
+    background-color: $secondaryColor; /*change color*/
+  }
